@@ -15,10 +15,10 @@ func Camelize(s string) string {
 			if convert {
 				convert = false
 				return unicode.ToUpper(r)
-			} else {
-				if r == '_' || r == ' ' {
-					convert = true
-				}
+			}
+
+			if r == '_' || r == ' ' {
+				convert = true
 			}
 			return r
 		},
@@ -40,7 +40,7 @@ func Capitalize(s string) string {
 		s)
 }
 
-// Lower case converts the first letter in a word to lowercase
+// Lowercase converts the first letter in a word to lowercase
 func Lowercase(s string) string {
 	first := true
 	return strings.Map(
@@ -132,6 +132,7 @@ func words(s string) []string {
 	return results
 }
 
+// AppendString appends a string slice to the end of data which is also a string slice.
 func AppendString(slice, data []string) []string {
 	m := len(slice)
 	n := m + len(data)
