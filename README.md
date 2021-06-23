@@ -1,4 +1,7 @@
-# akimimi/words
+akimimi/words
+======================
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/akimimi/words.svg)](https://pkg.go.dev/github.com/akimimi/words)
 
 Words provide some word transfer functions in golang.
 
